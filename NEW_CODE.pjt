@@ -1,0 +1,61 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\CCStudio_v3.3\MyProjects\BC13001\"
+ProjectType=Executable
+CPUFamily=TMS320C24XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="ADC.c"
+Source="cvectors.asm"
+Source="DataLog.c"
+Source="Delay.c"
+Source="Display.c"
+Source="Eeprom.c"
+Source="Encoder.c"
+Source="FactorysettingLogic.c"
+Source="Initialize.c"
+Source="Interrupt.c"
+Source="KeyScan.c"
+Source="MachineParametersFunctions.c"
+Source="MachineParametersLogic.c"
+Source="Main.c"
+Source="MenuFunctions.c"
+Source="MotorRunLogicFunctions.c"
+Source="MotorRunLogicNew.c"
+Source="Nmi.c"
+Source="OverloadHistory.c"
+Source="OverloadHistoryMenu.c"
+Source="SensorDetect.c"
+Source="Serial.c"
+Source="ToolsLogic.c"
+Source="ToolsLogicFunctions.c"
+Source="Towerlamp.c"
+Source="Carding.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -k -q -fr"$(Proj_dir)\Debug" -d"_DEBUG" -v2xx
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"$(Proj_dir)\Release" -v2xx
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\NEW_CODE.map" -o".\Debug\NEW_CODE.out" -stack1ffh -w -x -l"rts2xx.lib" -v2
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\NEW_CODE.map" -o".\Release\NEW_CODE.out" -w -x -v2
+
+["cvectors.asm" Settings: "Debug"]
+LinkOrder=2
+
+["Carding.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["Carding.cmd" Settings: "Release"]
+LinkOrder=1
+

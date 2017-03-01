@@ -1,0 +1,426 @@
+******************************************************************************
+TMS320C24xx COFF Linker           Version 7.04                   
+******************************************************************************
+>> Linked Wed Feb 08 17:34:57 2017
+
+OUTPUT FILE NAME:   <./Debug/NEW_CODE.out>
+ENTRY POINT SYMBOL: "_c_int0"  address: 00000044
+
+
+MEMORY CONFIGURATION
+
+           name     origin    length      used    attributes    fill
+         --------  --------  ---------  --------  ----------  --------
+PAGE 0: VECS      00000000  000000040  00000040     RWIX      
+         FLASH     00000044  000007fbc  000054c5     RWIX      
+         SARAM     00008000  000000800  00000000     RWIX      
+
+PAGE 1: B2        00000060  000000020  00000004     RWIX      
+         INT_RAM   00000200  0000001ff  000001ff     RWIX      
+         SARAM     00000800  000000800  000002af     RWIX      
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00000044    00005270     
+                  00000044    00000027     rts2xx.lib : boot.obj (.text)
+                  0000006b    00000000     cvectors.obj (.text)
+                  0000006b    0000004f     rts2xx.lib : exit.obj (.text)
+                  000000ba    000002e1     ADC.obj (.text)
+                  0000039b    00000156     DataLog.obj (.text)
+                  000004f1    00000068     Delay.obj (.text)
+                  00000559    00000383     Display.obj (.text)
+                  000008dc    000002a5     Eeprom.obj (.text)
+                  00000b81    0000018c     Encoder.obj (.text)
+                  00000d0d    0000006b     FactorysettingLogic.obj (.text)
+                  00000d78    00000603     Initialize.obj (.text)
+                  0000137b    00000285     Interrupt.obj (.text)
+                  00001600    00000099     KeyScan.obj (.text)
+                  00001699    00000881     MachineParametersFunctions.obj (.text)
+                  00001f1a    00000206     MachineParametersLogic.obj (.text)
+                  00002120    0000008f     Main.obj (.text)
+                  000021af    00000797     MenuFunctions.obj (.text)
+                  00002946    00000be1     MotorRunLogicFunctions.obj (.text)
+                  00003527    000007fe     MotorRunLogicNew.obj (.text)
+                  00003d25    00000049     Nmi.obj (.text)
+                  00003d6e    00000213     OverloadHistory.obj (.text)
+                  00003f81    000003d0     OverloadHistoryMenu.obj (.text)
+                  00004351    0000003b     SensorDetect.obj (.text)
+                  0000438c    00000173     Serial.obj (.text)
+                  000044ff    00000202     ToolsLogic.obj (.text)
+                  00004701    000005af     ToolsLogicFunctions.obj (.text)
+                  00004cb0    00000057     Towerlamp.obj (.text)
+                  00004d07    000000b6     rts2xx.lib : f_add.obj (.text)
+                  00004dbd    00000055                : f_cmp.obj (.text)
+                  00004e12    000000a8                : f_div.obj (.text)
+                  00004eba    00000001                : f_error.obj (.text)
+                  00004ebb    00000041                : f_ftoi.obj (.text)
+                  00004efc    00000053                : f_ftol.obj (.text)
+                  00004f4f    00000044                : f_ftou.obj (.text)
+                  00004f93    00000010                : f_incr.obj (.text)
+                  00004fa3    00000026                : f_itof.obj (.text)
+                  00004fc9    0000007c                : f_mul.obj (.text)
+                  00005045    0000000d                : f_sub.obj (.text)
+                  00005052    0000001b                : f_utof.obj (.text)
+                  0000506d    0000008d                : idiv.obj (.text)
+                  000050fa    000000ea                : ldiv.obj (.text)
+                  000051e4    0000002e                : saverest.obj (.text)
+                  00005212    0000001a                : strlen.obj (.text)
+                  0000522c    00000088                : udiv.obj (.text)
+
+.cinit     0    000052b4    00000255     
+                  000052b4    00000006     rts2xx.lib : exit.obj (.cinit)
+                  000052ba    00000065     ADC.obj (.cinit)
+                  0000531f    00000003     Display.obj (.cinit)
+                  00005322    00000020     Encoder.obj (.cinit)
+                  00005342    00000008     Initialize.obj (.cinit)
+                  0000534a    00000050     Interrupt.obj (.cinit)
+                  0000539a    0000000b     MachineParametersFunctions.obj (.cinit)
+                  000053a5    00000027     Main.obj (.cinit)
+                  000053cc    000000f3     MenuFunctions.obj (.cinit)
+                  000054bf    0000000a     MotorRunLogicFunctions.obj (.cinit)
+                  000054c9    00000021     MotorRunLogicNew.obj (.cinit)
+                  000054ea    0000000c     OverloadHistory.obj (.cinit)
+                  000054f6    00000012     SensorDetect.obj (.cinit)
+                  00005508    00000001     --HOLE-- [fill = 0000]
+
+.const     1    00000060    00000004     
+                  00000060    00000004     MenuFunctions.obj (.const)
+
+.switch    0    00000044    00000000     UNINITIALIZED
+
+.bss       1    00000800    000002af     UNINITIALIZED
+                  00000800    000000ef     MenuFunctions.obj (.bss)
+                  000008ef    00000000     Serial.obj (.bss)
+                  000008ef    00000000     OverloadHistoryMenu.obj (.bss)
+                  000008ef    00000000     Nmi.obj (.bss)
+                  000008ef    00000000     ToolsLogic.obj (.bss)
+                  000008ef    00000000     rts2xx.lib : f_add.obj (.bss)
+                  000008ef    00000000     Towerlamp.obj (.bss)
+                  000008ef    00000000     ToolsLogicFunctions.obj (.bss)
+                  000008ef    00000000     MachineParametersLogic.obj (.bss)
+                  000008ef    00000000     DataLog.obj (.bss)
+                  000008ef    00000000     cvectors.obj (.bss)
+                  000008ef    00000000     rts2xx.lib : boot.obj (.bss)
+                  000008ef    00000000     Delay.obj (.bss)
+                  000008ef    00000000     KeyScan.obj (.bss)
+                  000008ef    00000000     FactorysettingLogic.obj (.bss)
+                  000008ef    00000000     Eeprom.obj (.bss)
+                  000008ef    00000000     rts2xx.lib : f_cmp.obj (.bss)
+                  000008ef    00000000                : saverest.obj (.bss)
+                  000008ef    00000000                : ldiv.obj (.bss)
+                  000008ef    00000000                : f_itof.obj (.bss)
+                  000008ef    00000000                : strlen.obj (.bss)
+                  000008ef    00000000                : idiv.obj (.bss)
+                  000008ef    00000000                : f_utof.obj (.bss)
+                  000008ef    00000000                : f_mul.obj (.bss)
+                  000008ef    00000000                : f_sub.obj (.bss)
+                  000008ef    00000000                : f_ftoi.obj (.bss)
+                  000008ef    00000000                : f_ftol.obj (.bss)
+                  000008ef    00000000                : f_div.obj (.bss)
+                  000008ef    00000000                : f_error.obj (.bss)
+                  000008ef    00000000                : f_ftou.obj (.bss)
+                  000008ef    00000000                : f_incr.obj (.bss)
+                  000008ef    00000000                : udiv.obj (.bss)
+                  000008ef    0000000e     Encoder.obj (.bss)
+                  000008fd    00000001     Display.obj (.bss)
+                  00000900    000000da     Main.obj (.bss)
+                  000009da    00000022     rts2xx.lib : exit.obj (.bss)
+                  000009fc    00000004     Initialize.obj (.bss)
+                  00000a00    0000004f     ADC.obj (.bss)
+                  00000a4f    0000001c     Interrupt.obj (.bss)
+                  00000a6b    00000012     MotorRunLogicNew.obj (.bss)
+                  00000a80    00000018     OverloadHistory.obj (.bss)
+                  00000a98    00000009     MachineParametersFunctions.obj (.bss)
+                  00000aa1    00000008     SensorDetect.obj (.bss)
+                  00000aa9    00000006     MotorRunLogicFunctions.obj (.bss)
+
+.stack     1    00000200    000001ff     UNINITIALIZED
+                  00000200    00000000     rts2xx.lib : boot.obj (.stack)
+
+.sysmem    1    00000200    00000000     UNINITIALIZED
+
+vectors    0    00000000    00000040     
+                  00000000    00000040     cvectors.obj (vectors)
+
+.data      1    00000000    00000000     UNINITIALIZED
+                  00000000    00000000     rts2xx.lib : boot.obj (.data)
+                  00000000    00000000                : udiv.obj (.data)
+                  00000000    00000000                : strlen.obj (.data)
+                  00000000    00000000                : saverest.obj (.data)
+                  00000000    00000000                : ldiv.obj (.data)
+                  00000000    00000000                : idiv.obj (.data)
+                  00000000    00000000                : f_utof.obj (.data)
+                  00000000    00000000                : f_sub.obj (.data)
+                  00000000    00000000                : f_mul.obj (.data)
+                  00000000    00000000                : f_itof.obj (.data)
+                  00000000    00000000                : f_incr.obj (.data)
+                  00000000    00000000                : f_ftou.obj (.data)
+                  00000000    00000000                : f_ftol.obj (.data)
+                  00000000    00000000                : f_ftoi.obj (.data)
+                  00000000    00000000                : f_error.obj (.data)
+                  00000000    00000000                : f_div.obj (.data)
+                  00000000    00000000                : f_cmp.obj (.data)
+                  00000000    00000000                : f_add.obj (.data)
+                  00000000    00000000     Towerlamp.obj (.data)
+                  00000000    00000000     ToolsLogicFunctions.obj (.data)
+                  00000000    00000000     ToolsLogic.obj (.data)
+                  00000000    00000000     Serial.obj (.data)
+                  00000000    00000000     SensorDetect.obj (.data)
+                  00000000    00000000     OverloadHistoryMenu.obj (.data)
+                  00000000    00000000     OverloadHistory.obj (.data)
+                  00000000    00000000     Nmi.obj (.data)
+                  00000000    00000000     MotorRunLogicNew.obj (.data)
+                  00000000    00000000     MotorRunLogicFunctions.obj (.data)
+                  00000000    00000000     MenuFunctions.obj (.data)
+                  00000000    00000000     Main.obj (.data)
+                  00000000    00000000     MachineParametersLogic.obj (.data)
+                  00000000    00000000     MachineParametersFunctions.obj (.data)
+                  00000000    00000000     KeyScan.obj (.data)
+                  00000000    00000000     Interrupt.obj (.data)
+                  00000000    00000000     Initialize.obj (.data)
+                  00000000    00000000     FactorysettingLogic.obj (.data)
+                  00000000    00000000     Encoder.obj (.data)
+                  00000000    00000000     Eeprom.obj (.data)
+                  00000000    00000000     Display.obj (.data)
+                  00000000    00000000     Delay.obj (.data)
+                  00000000    00000000     DataLog.obj (.data)
+                  00000000    00000000     ADC.obj (.data)
+                  00000000    00000000     cvectors.obj (.data)
+                  00000000    00000000     rts2xx.lib : exit.obj (.data)
+
+
+GLOBAL SYMBOLS
+
+address  name                             address  name
+-------- ----                             -------- ----
+00000800 .bss                             00000000 .data
+00000000 .data                            00000000 edata
+00000044 .text                            00000044 .text
+000000b7 C$$EXIT                          00000044 _c_int0
+00004d07 F$$ADD                           0000006b _exit
+00004dbd F$$COMPARE                       00000098 _atexit
+00004e12 F$$DIV                           000000b7 _abort
+00004e00 F$$EQ                            000000b7 C$$EXIT
+00004ebb F$$FTOI                          000000ba _AdcInit
+00004efc F$$FTOL                          00000151 _ResetFilterSumArray
+00004f4f F$$FTOU                          0000017f _LcFilterGet
+00004e0c F$$GE                            000001ff __STACK_SIZE
+00004e0f F$$GT                            000002a3 _AdcFilteredGet
+00004f93 F$$INCR                          000002fa _ResetOverloadCounterArray
+00004fa3 F$$ITOF                          0000031b _CheckOverload
+00004e06 F$$LE                            0000035b _CheckpreOverload
+00004e09 F$$LT                            0000039b _Datalog
+00004fc9 F$$MUL                           00000463 _DataLogMotorPID
+00004e03 F$$NE                            000004d1 _DataLogSignal
+00005045 F$$SUB                           000004f1 _delay1us
+00005052 F$$UTOF                          000004fa _delay1ms
+0000506d I$$DIV                           00000516 _delay
+000050a9 I$$MOD                           00000646 _DispInit
+000051fc I$$REST                          000006a5 _DispClear
+000051e4 I$$SAVE                          000006b7 _DispText
+0000522c I$$UDIV                          0000071a _DispNo
+00005252 I$$UMOD                          00000800 .bss
+000050fa L$$DIVS                          000008fb _M3Mtcount
+0000516c L$$DIVU                          000008fc _finmts
+00005135 L$$MODS                          00000900 _trigger
+0000518c L$$MODU                          00000901 _MCnt1
+000002a3 _AdcFilteredGet                  00000902 _OV
+000000ba _AdcInit                         00000906 _dataSetEeAddress
+00000a00 _AdcValue                        0000090b _O
+00004a0c _ApplyPwmTest                    00000914 _motorNames
+000032b8 _ApplyPwms                       0000092c _U
+00000a18 _AvgAdcValue                     00000962 _M
+00000a4e _Beaterpreovloadflag             000009db __cleanup_ptr
+00000a6a _Blinkflag                       000009fc _Precentagecalc
+00003299 _CheckAllMotors                  000009fe _Tensiondraft
+0000031b _CheckOverload                   00000a00 _AdcValue
+00004a60 _CheckPassword                   00000a0c _NewAdcValue
+0000035b _CheckpreOverload                00000a18 _AvgAdcValue
+00001baa _ConvertAdcToDisplayFormat       00000a24 _adcFilterArray
+00001bfc _ConvertIntToDisplayTime         00000a30 _NewAdcFilterArray
+000041d4 _CycleAdcReadings                00000a3c _LcAdcValue
+00002946 _CycleDisp                       00000a3e _LcAdcValue1
+00000a66 _Cycleautostep                   00000a40 _LcAdcValue2
+00003efa _DataLogHistory                  00000a42 _LcAdcValue3
+00000463 _DataLogMotorPID                 00000a44 _NewLcAdcValue
+000004d1 _DataLogSignal                   00000a46 _tempAdc
+000025f3 _DataloggingMenu                 00000a4d _LcchokeFlag
+0000039b _Datalog                         00000a4e _Beaterpreovloadflag
+000006a5 _DispClear                       00000a4f _loopPoint5mS1
+00000646 _DispInit                        00000a50 _loopPoint5mS2
+0000071a _DispNo                          00000a51 _loopPoint5mS3
+000006b7 _DispText                        00000a52 _loopPoint1mS
+00000aa5 _DooropenFlag                    00000a53 _loopcount50ms
+00004351 _DooropenSensor                  00000a54 _Stepperlowflag
+00000aeb _EepromRead                      00000a55 _Stepcnt
+00000a70 _EepromWrite                     00000a56 _Stepperoffdelay
+00000bbe _EncoderCapture                  00000a57 _Fstepperoffdelay
+00000d0d _FactorySettings                 00000a59 _Fstepperoffdelay1
+0000252f _FactorysettingsMenu             00000a5b _Toggleflag
+00000aa1 _FillCount                       00000a5c _Liftflag
+00000a57 _Fstepperoffdelay                00000a5d _Liftbottomcnt
+00000a59 _Fstepperoffdelay1               00000a5e _Liftbottomcnt1
+00000c29 _GetRPM                          00000a5f _lifthomereset
+00003f81 _HistoryMenu                     00000a60 _Stepperresetcnt
+00000a79 _Inchflag                        00000a61 _Stepperresetcnt1
+0000102f _InitMenuStruct                  00000a62 _Stopcount
+0000113a _InitMotorHardware               00000a63 _Liftupcount
+000011b9 _InitMotorHardwareTest           00000a64 _Liftcount
+00001297 _InitMotorPID                    00000a65 _Preovloadcnt
+0000110c _InitOptionsStruct               00000a66 _Cycleautostep
+00001129 _InitOverloadStruct              00000a67 _Tenmmcycle
+00000d78 _Initialize                      00000a68 _Tencount
+00001609 _KeyScan                         00000a69 _Stopbtrfeedflag
+00001600 _KeysInit                        00000a6a _Blinkflag
+00000aa3 _LCFillCount                     00000a6d _mtrcnt
+00000aa4 _LCSignalHigh                    00000a6e _finmts100
+00000aa8 _LCfillFlag                      00000a6f _cleancount
+00000a3e _LcAdcValue1                     00000a70 _EepromWrite
+00000a40 _LcAdcValue2                     00000a70 _Stepperdircnt
+00000a42 _LcAdcValue3                     00000a71 _Stepperstartcnt
+00000a3c _LcAdcValue                      00000a72 _Stepdelaycnt
+0000017f _LcFilterGet                     00000a73 _Stepperautostart
+00000a4d _LcchokeFlag                     00000a74 _Stepperhomeflag
+00000a5d _Liftbottomcnt                   00000a75 _Secondpushbuttonpress
+00000a5e _Liftbottomcnt1                  00000a76 _lcdDisplay
+00000a64 _Liftcount                       00000a77 _SecondaryMotorOn
+00000a5c _Liftflag                        00000a78 _Machinecleanflag
+00000a63 _Liftupcount                     00000a79 _Inchflag
+00004799 _LoadDatalogOptions              00000a7a _sliverdisplay
+00000d68 _LoadSensorsetOptions            00000a7b _mtrwriteflag
+000008fb _M3Mtcount                       00000a7c _PiecingRpm
+00000901 _MCnt1                           00000aa1 _FillCount
+00000a78 _Machinecleanflag                00000aa2 _SignalHigh
+00000962 _M                               00000aa3 _LCFillCount
+000022e5 _MotorSelectMenu                 00000aa4 _LCSignalHigh
+0000223c _MachineParametersMenu           00000aa5 _DooropenFlag
+00000e25 _MotorStructInit                 00000aa6 _SlivercutFlag
+00000a30 _NewAdcFilterArray               00000aa7 _OpenerfillFlag
+00000a0c _NewAdcValue                     00000aa8 _LCfillFlag
+00000a44 _NewLcAdcValue                   00000aa9 _motorCounter
+00003d25 _Nmi                             00000aaf end
+00000aa7 _OpenerfillFlag                  00000aeb _EepromRead
+0000090b _O                               00000bbe _EncoderCapture
+00000902 _OV                              00000c29 _GetRPM
+00003527 _PauseMotors                     00000cd4 _ResetAllRPMCounts
+00000a7c _PiecingRpm                      00000ce4 _ResetFilterRpmArray
+000009fc _Precentagecalc                  00000d0d _FactorySettings
+00000a65 _Preovloadcnt                    00000d68 _LoadSensorsetOptions
+00000cd4 _ResetAllRPMCounts               00000d78 _Initialize
+00000ce4 _ResetFilterRpmArray             00000e25 _MotorStructInit
+00000151 _ResetFilterSumArray             0000102f _InitMenuStruct
+00003eaf _ResetHistoryArrays              0000110c _InitOptionsStruct
+00003501 _ResetIntegralErrorArray         00001129 _InitOverloadStruct
+000017c6 _ResetMotorSpeeds                0000113a _InitMotorHardware
+000002fa _ResetOverloadCounterArray       000011b9 _InitMotorHardwareTest
+0000196b _ResetOverloadCurrent            00001297 _InitMotorPID
+00001b15 _ResetOverloadTime               0000137b _overload
+00001df2 _ResetPidConsts                  0000156d _Timer
+0000296f _RunLoopMotorSelectMenu          00001600 _KeysInit
+00002a28 _RunLoopSetMotorSpeed            00001609 _KeyScan
+00001f1a _RunMachineParameters            00001699 _SetMotorSpeed
+0000356c _RunMachine                      000017c6 _ResetMotorSpeeds
+000047f8 _RunMotorTest                    00001822 _SaveMotorSpeed
+000044ff _RunTools                        00001859 _SetMotorOverloadCurrent
+00003de4 _SaveHistoryArray                0000196b _ResetOverloadCurrent
+000019c0 _SaveMotorOverloadCurrent        000019c0 _SaveMotorOverloadCurrent
+00001b69 _SaveMotorOverloadTime           00001a01 _SetMotorOverloadTime
+00001822 _SaveMotorSpeed                  00001b15 _ResetOverloadTime
+00000a77 _SecondaryMotorOn                00001b69 _SaveMotorOverloadTime
+00000a75 _Secondpushbuttonpress           00001baa _ConvertAdcToDisplayFormat
+000023ae _SensorSelectMenu                00001bfc _ConvertIntToDisplayTime
+0000279f _SensorsetMenu                   00001c27 _SetPid
+000043ac _SerialDisable                   00001df2 _ResetPidConsts
+0000438c _SerialInit                      00001f1a _RunMachineParameters
+0000443c _SerialWriteComma                00002120 _main
+0000446e _SerialWriteMinus                000021af _TopLevelMenu
+00004455 _SerialWriteNewLine              0000223c _MachineParametersMenu
+000043c0 _SerialWriteNo                   000022e5 _MotorSelectMenu
+00004487 _SerialWriteText                 000023ae _SensorSelectMenu
+000047be _SetBtrPinsLow                   00002472 _ToolsMenu
+00001859 _SetMotorOverloadCurrent         0000252f _FactorysettingsMenu
+00001a01 _SetMotorOverloadTime            000025f3 _DataloggingMenu
+00004701 _SetMotorPwmPercent              0000279f _SensorsetMenu
+00001699 _SetMotorSpeed                   00002946 _CycleDisp
+00001c27 _SetPid                          0000296f _RunLoopMotorSelectMenu
+000047d5 _SetSdPinHigh                    00002a28 _RunLoopSetMotorSpeed
+00000aa2 _SignalHigh                      00002bb3 _UpdateMotorRpm
+00000aa6 _SlivercutFlag                   00002e6e _UpdateMotorPwm
+00004375 _SlivercutSensor                 00003299 _CheckAllMotors
+00000a55 _Stepcnt                         000032b8 _ApplyPwms
+00000a72 _Stepdelaycnt                    00003346 _UpdateMotorPID
+00000a73 _Stepperautostart                00003501 _ResetIntegralErrorArray
+00003ce7 _Stepperdirchange                00003527 _PauseMotors
+00000a70 _Stepperdircnt                   0000356c _RunMachine
+00000a74 _Stepperhomeflag                 00003ce7 _Stepperdirchange
+00000a54 _Stepperlowflag                  00003d25 _Nmi
+00000a56 _Stepperoffdelay                 00003d6e _UpdateHistoryArray
+00000a61 _Stepperresetcnt1                00003de4 _SaveHistoryArray
+00000a60 _Stepperresetcnt                 00003eaf _ResetHistoryArrays
+00000a71 _Stepperstartcnt                 00003efa _DataLogHistory
+000047e3 _StopAllMotors                   00003f81 _HistoryMenu
+00000a69 _Stopbtrfeedflag                 000041d4 _CycleAdcReadings
+00000a62 _Stopcount                       00004351 _DooropenSensor
+00000a68 _Tencount                        00004375 _SlivercutSensor
+00000a67 _Tenmmcycle                      0000438c _SerialInit
+000009fe _Tensiondraft                    000043ac _SerialDisable
+0000156d _Timer                           000043c0 _SerialWriteNo
+00000a5b _Toggleflag                      0000443c _SerialWriteComma
+00002472 _ToolsMenu                       00004455 _SerialWriteNewLine
+000021af _TopLevelMenu                    0000446e _SerialWriteMinus
+00004cf8 _TowerLampBrown_Off              00004487 _SerialWriteText
+00004cea _TowerLampBrown_On               000044bc _WaitForTxRdyFlag
+00004cbe _TowerLampGreen_Off              000044ff _RunTools
+00004cb0 _TowerLampGreen_On               00004701 _SetMotorPwmPercent
+00004cdb _TowerLampRed_Off                00004799 _LoadDatalogOptions
+00004ccd _TowerLampRed_On                 000047be _SetBtrPinsLow
+0000092c _U                               000047d5 _SetSdPinHigh
+00003d6e _UpdateHistoryArray              000047e3 _StopAllMotors
+00003346 _UpdateMotorPID                  000047f8 _RunMotorTest
+00002e6e _UpdateMotorPwm                  00004944 _UpdateMotorTest
+00002bb3 _UpdateMotorRpm                  00004a0c _ApplyPwmTest
+00004944 _UpdateMotorTest                 00004a60 _CheckPassword
+000044bc _WaitForTxRdyFlag                00004cb0 _TowerLampGreen_On
+000001ff __STACK_SIZE                     00004cbe _TowerLampGreen_Off
+000009db __cleanup_ptr                    00004ccd _TowerLampRed_On
+000000b7 _abort                           00004cdb _TowerLampRed_Off
+00000a24 _adcFilterArray                  00004cea _TowerLampBrown_On
+00000098 _atexit                          00004cf8 _TowerLampBrown_Off
+00000044 _c_int0                          00004d07 F$$ADD
+00000a6f _cleancount                      00004dbd F$$COMPARE
+00000906 _dataSetEeAddress                00004e00 F$$EQ
+00000516 _delay                           00004e03 F$$NE
+000004fa _delay1ms                        00004e06 F$$LE
+000004f1 _delay1us                        00004e09 F$$LT
+0000006b _exit                            00004e0c F$$GE
+00004eba _f$$error                        00004e0f F$$GT
+00000a6e _finmts100                       00004e12 F$$DIV
+000008fc _finmts                          00004eba _f$$error
+00000a76 _lcdDisplay                      00004ebb F$$FTOI
+00000a5f _lifthomereset                   00004efc F$$FTOL
+00000a52 _loopPoint1mS                    00004f4f F$$FTOU
+00000a4f _loopPoint5mS1                   00004f93 F$$INCR
+00000a50 _loopPoint5mS2                   00004fa3 F$$ITOF
+00000a51 _loopPoint5mS3                   00004fc9 F$$MUL
+00000a53 _loopcount50ms                   00005045 F$$SUB
+00002120 _main                            00005052 F$$UTOF
+00000aa9 _motorCounter                    0000506d I$$DIV
+00000914 _motorNames                      000050a9 I$$MOD
+00000a6d _mtrcnt                          000050fa L$$DIVS
+00000a7b _mtrwriteflag                    00005135 L$$MODS
+0000137b _overload                        0000516c L$$DIVU
+00000a7a _sliverdisplay                   0000518c L$$MODU
+00005212 _strlen                          000051e4 I$$SAVE
+00000a46 _tempAdc                         000051fc I$$REST
+00000900 _trigger                         00005212 _strlen
+000052b4 cinit                            0000522c I$$UDIV
+00000000 edata                            00005252 I$$UMOD
+00000aaf end                              000052b4 cinit
+000052b4 etext                            000052b4 etext
+ffffffff pinit                            ffffffff pinit
+
+[225 symbols]
